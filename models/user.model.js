@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         default:""
     },
-    skills:[{type:string}],
+    skills:[{type:String}],
     education:[
         {
             college:{type:String},
@@ -61,7 +61,7 @@ const userSchema = new mongoose.Schema({
     connection:[
         {
             type:mongoose.Schema.Types.ObjectId,
-            ref:User
+            ref: "User"
         }
     ]
 },{timestamps:true})
